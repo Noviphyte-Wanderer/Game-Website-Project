@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Website Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+    <div id="website-container">
+    <header>
+        <a href="#"><h1 id="site-title">Kinetica Hub</h1></a>
+        <i class="menu-icon fa-sharp fa-solid fa-bars"></i>
+        <nav>
+        <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Games</a></li>
+    </ul>
+        </nav>
+        <div id="game-selection">
+        <p>Platforms</p>
+        <ul>
+            <li><a href="#">Nintendo</a></li>
+        </ul>
+        </div>
+        <span></span>
+        <span></span>
+        <div id="search-container">
+        <input type="search" id="main-search-bar" placeholder="Search for games here" role="search"></input>
+        <button class="search-btn">Search</button>
+        </div>
+    <button class="cart-btn">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </button>
+    <span></span>
+    </header>
+    <main>
+        <section class="section" id="latest-games-section">
+        <h2 class="section-heading text-center">New Games in Catalog</h2>
+        <div class="games-container">
+            <i class="slider left-slider fa-sharp fa-solid fa-angle-left" tabindex="0"></i>
+            <div class="container">
+            <div id="latest-games" class="games-catalog">
+            </div>
+            </div>
+            <i class="slider right-slider fa-sharp fa-solid fa-angle-right" tabindex="0"></i>
+        </div>
+        </section>
+        <section class="section" id="featured-games-section">
+        <h2 class="section-heading text-center">Featured</h2>
+        <div class="games-container">
+            <i class="slider left-slider fa-sharp fa-solid fa-angle-left" tabindex="0"></i>
+            <div class="container">
+            <div class="games-catalog" id="featured-games"></div>
+            </div>
+            <i class="slider right-slider fa-sharp fa-solid fa-angle-right" tabindex="0"></i>
+        </div>
+        </section>
+        <dialog id="game-card-modal"></dialog>
+        
+    </main>
+    <footer>
+        <section id="contacts-section" class="footer section">
+        <h2 class="section-heading">CONTACTS ></h2>
+        <div class="contacts-container">
+            <i class="contact fa-brands fa-x-twitter" tabindex="0"></i>
+            <i class="contact fa-brands fa-facebook" tabindex="0"></i>
+            <i class="contact fa-brands fa-linkedin" tabindex="0"></i>
+        </div>
+        </section>
+    </footer>
+    </div>
+    <div class="modal-backdrop"></div>
+    <script src="index.js"></script>
+</body>
+</html>
